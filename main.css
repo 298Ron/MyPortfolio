@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Smokum&family=Wix+Madefor+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+}
+
+.button:hover {
+    transition: 600ms;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+
+.video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.navbar {
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-brand {
+    line-height: 5rem;
+}
+
+.nav-item {
+    padding-left: 30px;
+}
+
+.container-fluid {
+    width: 80%;
+}
+
+.navbar-collapse {
+    display: flex;
+    direction: rtl;
+
+}
+
+.nav-link {
+    font-size: 25px;
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(black 0 0);
+    background-position: 0 100%;
+    /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s;
+    /*change after the size immediately*/
+}
+
+.nav-link:hover {
+    background-position: 100% 100%;
+    /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+.newTitle {
+    padding: 100px;
+    margin-top: 100px;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #0152f5 0%,
+            #6b04e0 29%,
+            #e7e3e3 67%,
+            #0119f5 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    font-size: 100px;
+}
+
+
+.secondSection {
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.secondSection ul {
+    list-style-type: square;
+}
+
+.socialMedia {
+    z-index: 2;
+    width: 50px;
+    display: block;
+    position: fixed;
+    top: 30%;
+}
+
+.socialMedia ul {
+    text-align: center;
+    padding: 5px;
+    margin: -9px auto;
+    position: relative;
+}
+
+
+#aboutMe {
+    position: relative;
+    top: 15%;
+}
+
+.thirdSection {
+    height: 100vh;
+    background-color: #000;
+}
+
+
+/* Cards section */
+.card {
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.card-img-top {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.2);
+    transition: 1000ms;
+}
+
+/* Fourth section (Contacs us) */
+.fourthSection {
+    position: relative;
+    width: 100%;
+}
+
+.fourthSection #contactUs {
+    position: absolute;
+    width: 35%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .body {
+        overflow: hidden;
+    }
+
+    .fourthSection .container h2,
+    .secondSection h1,
+    .thirdSection h1 {
+        font-size: 2.5rem;
+    }
+
+    /* navbar */
+    .navbar {
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+    }
+
+    /* firstSection */
+    .firstSection {
+        width: 100%;
+    }
+
+    .video {
+        object-fit: cover;
+        height: 50vh;
+    }
+
+    .newTitle {
+        width: 100%;
+        padding: 4rem;
+        font-size: 3.5rem;
+        line-height: 6rem;
+    }
+
+    /* secondSection */
+    .secondSection {
+        margin-top: -10px;
+        height: 180vh;
+    }
+
+    .secondSection .col-md-4 {
+        padding-top: 5vh;
+    }
+
+    .secondSection .container {
+        margin-top: -10vh;
+    }
+
+    .secondSection .container .img {
+
+        width: 100%;
+        object-fit: cover;
+        margin: 10vh;
+        transform: scale(2.5);
+    }
+
+    /* thirdSection */
+    .thirdSection {
+        width: 100vw;
+        height: 160vh;
+        position: relative;
+    }
+
+    .thirdSection .col-md-4 {
+        display: flex;
+        width: 100%;
+    }
+
+    /* fourthSection */
+    .fourthSection {
+        height: 100vh;
+    }
+
+
+
+    .fourthSection .container h6 {
+        font-size: 1.5rem;
+    }
+
+    .fourthSection #contactUs {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .fourthSection .form-control {
+        font-size: 2rem;
+    }
+
+    .fourthSection button {
+        font-size: 2rem;
+    }
+
+}

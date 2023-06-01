@@ -1,0 +1,94 @@
+/* MOBILE */
+@media only screen and (max-width: 400px) {
+    .body {
+        overflow: hidden;
+    }
+
+    .fourthSection .container h2,
+    .secondSection h1,
+    .thirdSection h1 {
+        font-size: 2.5rem;
+    }
+
+    /* navbar */
+    .navbar {
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+    }
+
+    /* firstSection */
+    .firstSection {
+        width: 100vw;
+    }
+
+    .video {
+        object-fit: cover;
+        height: 55vh;
+    }
+
+    .newTitle {
+        width: 100%;
+        padding: 4rem;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    /* secondSection */
+    .secondSection {
+        margin-top: -10px;
+        height: 235vh;
+    }
+
+    .secondSection .col-md-4 {
+        padding-top: 5vh;
+    }
+
+    .secondSection .container {
+        margin-top: -10vh;
+    }
+
+    .secondSection .container .img {
+
+        width: 100%;
+        object-fit: cover;
+        margin: 10vh;
+        transform: scale(2.5);
+    }
+
+    /* thirdSection */
+    .thirdSection {
+        width: 100vw;
+        height: 190vh;
+        position: relative;
+    }
+
+    .thirdSection .col-md-4 {
+        display: flex;
+        width: 100%;
+    }
+
+    /* fourthSection */
+    .fourthSection {
+        height: 100vh;
+    }
+
+
+
+    .fourthSection .container h6 {
+        font-size: 1.2rem;
+    }
+
+    .fourthSection #contactUs {
+        width: 80vw;
+        height: 100vh;
+    }
+
+    .fourthSection .form-control {
+        font-size: 2rem;
+    }
+
+    .fourthSection button {
+        font-size: 2rem;
+    }
+}
