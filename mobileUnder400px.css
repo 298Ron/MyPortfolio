@@ -1,5 +1,6 @@
 /* MOBILE */
 @media only screen and (max-width: 400px) {
+
     .body {
         overflow: hidden;
     }
@@ -36,16 +37,12 @@
 
     /* secondSection */
     .secondSection {
-        margin-top: -10px;
-        height: 235vh;
+        margin-top: -80px;
+        height: 255vh;
     }
 
     .secondSection .col-md-4 {
         padding-top: 5vh;
-    }
-
-    .secondSection .container {
-        margin-top: -10vh;
     }
 
     .secondSection .container .img {
@@ -59,7 +56,7 @@
     /* thirdSection */
     .thirdSection {
         width: 100vw;
-        height: 190vh;
+        height: 210vh;
         position: relative;
     }
 
@@ -70,10 +67,13 @@
 
     /* fourthSection */
     .fourthSection {
-        height: 100vh;
+        height: 150vh;
+        background-color: #ccc;
     }
 
-
+    .fourthSection {
+        width: 100vw;
+    }
 
     .fourthSection .container h6 {
         font-size: 1.2rem;
@@ -81,11 +81,11 @@
 
     .fourthSection #contactUs {
         width: 80vw;
-        height: 100vh;
+        height: 95vh;
     }
 
     .fourthSection .form-control {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .fourthSection button {

@@ -24,7 +24,7 @@ var personalInfo = [
 function displayAboutLeftColumn() {
     var leftColumn = document.getElementById("leftColumn");
     for (var i = 0; i < personalInfo.length; i++) {
-        leftColumn.innerHTML += "<div class=\"h5\" style=\"line-height:4rem;text-align:left;\">\n        <ul>\n        <li>Full Name: ".concat(personalInfo[i].fullName, "</li>\n        <li>Proffesion: ").concat(personalInfo[i].proffesion, "</li>\n        <li>Email: ").concat(personalInfo[i].email, "</li>\n        <li>Phone: ").concat(personalInfo[i].phone, "</li>\n        </ul>\n        </div>");
+        leftColumn.innerHTML += "<div class=\"h5 text-light\" style=\"line-height:4rem;text-align:left;\">\n        <ul>\n        <li>Full Name: ".concat(personalInfo[i].fullName, "</li>\n        <li>Proffesion: ").concat(personalInfo[i].proffesion, "</li>\n        <li>Email: ").concat(personalInfo[i].email, "</li>\n        <li>Phone: ").concat(personalInfo[i].phone, "</li>\n        </ul>\n        </div>");
     }
 }
 displayAboutLeftColumn();
@@ -77,7 +77,7 @@ var projects = [
 function displayGallery() {
     var gallery = document.getElementById("gallery");
     for (var i = 0; i < projects.length; i++) {
-        gallery.innerHTML += "<div class=\"col-md-4 mt-3\">\n        <div class=\"card\" style=\"width: 25rem;\">\n                    <a href=\"".concat(projects[i].link, "\" target=\"_blank\"><img src=\"").concat(projects[i].img, "\" class=\"card-img-top\" alt=\"...\" style=\"object-fit: cover;\"></a>\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title mt-3\" style=\"font-weight:bold\">").concat(projects[i].title, "</h5>\n                        <p class=\"card-text\">").concat(projects[i].description, "</p>\n                    </div>\n                    <ul class=\"list-group list-group-flush\">\n                        <li class=\"list-group-item\">").concat(projects[i].stack, "</li>\n                        <li class=\"list-group-item\">").concat(projects[i].DevelopmentField, "</li>\n                    </ul>\n\n                </div>\n        </div>\n        ");
+        gallery.innerHTML += "<div class=\" col-md-4  mt-3\">\n        <div class=\"card\" style=\"width: 100%;\">\n                    <a href=\"".concat(projects[i].link, "\" target=\"_blank\"><img src=\"").concat(projects[i].img, "\" class=\"card-img-top\" alt=\"...\" style=\"object-fit: cover;\"></a>\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title mt-3\" style=\"font-weight:bold\">").concat(projects[i].title, "</h5>\n                        <p class=\"card-text\">").concat(projects[i].description, "</p>\n                    </div>\n                    <ul class=\"list-group list-group-flush\">\n                        <li class=\"list-group-item\">").concat(projects[i].stack, "</li>\n                        <li class=\"list-group-item\">").concat(projects[i].DevelopmentField, "</li>\n                    </ul>\n\n                </div>\n        </div>\n        ");
     }
 }
 ;

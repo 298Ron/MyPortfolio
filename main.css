@@ -109,12 +109,21 @@ body {
 
 
 .secondSection {
+    margin-top: -10px;
     height: 100vh;
-    background-color: #ccc;
+    background-color: rgb(184, 184, 184);
+}
+
+.secondSection .img {
+    margin-top: -90px !important;
 }
 
 .secondSection ul {
     list-style-type: square;
+}
+
+.secondSection .button {
+    margin-top: 30px !important;
 }
 
 .socialMedia {
@@ -251,6 +260,11 @@ body {
     .thirdSection .col-md-4 {
         display: flex;
         width: 100%;
+    }
+
+    .card {
+        width: 50vw !important;
+
     }
 
     /* fourthSection */

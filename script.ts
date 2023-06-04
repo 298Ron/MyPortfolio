@@ -26,7 +26,7 @@ let personalInfo: { fullName: string; proffesion: string; email: string; phone: 
 function displayAboutLeftColumn(): void {
     var leftColumn = document.getElementById("leftColumn")
     for (let i = 0; i < personalInfo.length; i++) {
-        leftColumn!.innerHTML += `<div class="h5" style="line-height:4rem;text-align:left;">
+        leftColumn!.innerHTML += `<div class="h5 text-light" style="line-height:4rem;text-align:left;">
         <ul>
         <li>Full Name: ${personalInfo[i].fullName}</li>
         <li>Proffesion: ${personalInfo[i].proffesion}</li>
@@ -90,8 +90,8 @@ let projects: { id: number; title: string; img: string; description: string; sta
 function displayGallery(): void {
     var gallery = document.getElementById("gallery");
     for (let i = 0; i < projects.length; i++) {
-        gallery!.innerHTML += `<div class="col-md-4 mt-3">
-        <div class="card" style="width: 25rem;">
+        gallery!.innerHTML += `<div class=" col-md-4  mt-3">
+        <div class="card" style="width: 100%;">
                     <a href="${projects[i].link}" target="_blank"><img src="${projects[i].img}" class="card-img-top" alt="..." style="object-fit: cover;"></a>
                     <div class="card-body">
                         <h5 class="card-title mt-3" style="font-weight:bold">${projects[i].title}</h5>
