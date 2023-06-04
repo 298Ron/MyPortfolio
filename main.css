@@ -122,9 +122,7 @@ body {
     list-style-type: square;
 }
 
-.secondSection .button {
-    margin-top: 30px !important;
-}
+.secondSection .button {}
 
 .socialMedia {
     z-index: 2;
@@ -236,11 +234,14 @@ body {
 
     .secondSection .col-md-4 {
         padding-top: 5vh;
+
     }
 
     .secondSection .container {
         margin-top: -10vh;
+
     }
+
 
     .secondSection .container .img {
 
