@@ -51,7 +51,8 @@ var projects = [
         title: "ManageU",
         img: "./Images/ManageU.jpg.png",
         description: "Some quick example text to build on the card title and make up the bulk",
-        stack: "HTML, JavaScript",
+        stack: "HTML, JavaScript, TypeScript",
+        git: "https://github.com/298Ron/ManageU",
         DevelopmentField: "FullStack",
         link: 'https://manageu-ron.netlify.app/',
     },
@@ -61,6 +62,7 @@ var projects = [
         img: "./Images/MyAccount.jpg.png",
         description: "Some quick example text to build on the card title and make up the bulk",
         stack: "HTML, JavaScript",
+        git: "https://github.com/298Ron/MyAccount",
         DevelopmentField: "FullStack",
         link: 'https://myaccount-ron.netlify.app/',
     },
@@ -70,6 +72,7 @@ var projects = [
         img: "./Images/TechIT.jpg",
         description: "Some quick example text to build on the card title and make up the bulk",
         stack: "HTML, JavaScript",
+        git: "https://github.com/298Ron/TECHIT",
         DevelopmentField: "FullStack",
         link: 'https://techit-ron.netlify.app/'
     },
@@ -77,7 +80,7 @@ var projects = [
 function displayGallery() {
     var gallery = document.getElementById("gallery");
     for (var i = 0; i < projects.length; i++) {
-        gallery.innerHTML += "<div class=\" col-md-4  mt-3\">\n        <div class=\"card\" style=\"width: 100%;\">\n                    <a href=\"".concat(projects[i].link, "\" target=\"_blank\"><img src=\"").concat(projects[i].img, "\" class=\"card-img-top\" alt=\"...\" style=\"object-fit: cover;\"></a>\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title mt-3\" style=\"font-weight:bold\">").concat(projects[i].title, "</h5>\n                        <p class=\"card-text\">").concat(projects[i].description, "</p>\n                    </div>\n                    <ul class=\"list-group list-group-flush\">\n                        <li class=\"list-group-item\">").concat(projects[i].stack, "</li>\n                        <li class=\"list-group-item\">").concat(projects[i].DevelopmentField, "</li>\n                    </ul>\n\n                </div>\n        </div>\n        ");
+        gallery.innerHTML += "<div class=\" col-md-4  mt-3\">\n        <div class=\"card\" style=\"width: 100%;\">\n                    <a href=\"".concat(projects[i].link, "\" target=\"_blank\"><img src=\"").concat(projects[i].img, "\" class=\"card-img-top\" alt=\"...\" style=\"object-fit: cover;\"></a>\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title mt-3\" style=\"font-weight:bold\">").concat(projects[i].title, "</h5>\n                        <p class=\"card-text\">").concat(projects[i].description, "</p>\n                    </div>\n                    <ul class=\"list-group list-group-flush\">\n                        <li class=\"list-group-item\" >").concat(projects[i].stack, "\n                        <a href=\"").concat(projects[i].git, "\" target=\"_blank\"><i class=\"fa-brands fa-github text-dark fs-3 gitIcon\" style=\"margin-left:20px;\" ></i></a></li>\n                        <li class=\"list-group-item\">").concat(projects[i].DevelopmentField, "</li>\n                        <li class=\"list-group-item mobileGit\" style=\"display:none;\"><a href=\"").concat(projects[i].git, "\" target=\"_blank\"><h2>Github Link</h2></a></li>\n                        \n                    </ul>\n\n                </div>\n        </div>\n        ");
     }
 }
 ;

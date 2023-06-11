@@ -58,13 +58,14 @@ function displayLanguagesInRightColumn() {
 }
 displayLanguagesInRightColumn()
 
-let projects: { id: number; title: string; img: string; description: string; stack: string; DevelopmentField: string; link: string }[] = [
+let projects: { id: number; title: string; img: string; description: string; stack: string; git: string, DevelopmentField: string; link: string }[] = [
     {
         id: 1,
         title: "ManageU",
         img: "./Images/ManageU.jpg.png",
         description: "Some quick example text to build on the card title and make up the bulk",
-        stack: "HTML, JavaScript",
+        stack: "HTML, JavaScript, TypeScript",
+        git: "https://github.com/298Ron/ManageU",
         DevelopmentField: "FullStack",
         link: 'https://manageu-ron.netlify.app/',
     },
@@ -74,6 +75,7 @@ let projects: { id: number; title: string; img: string; description: string; sta
         img: "./Images/MyAccount.jpg.png",
         description: "Some quick example text to build on the card title and make up the bulk",
         stack: "HTML, JavaScript",
+        git: "https://github.com/298Ron/MyAccount",
         DevelopmentField: "FullStack",
         link: 'https://myaccount-ron.netlify.app/',
     },
@@ -83,6 +85,7 @@ let projects: { id: number; title: string; img: string; description: string; sta
         img: "./Images/TechIT.jpg",
         description: "Some quick example text to build on the card title and make up the bulk",
         stack: "HTML, JavaScript",
+        git: "https://github.com/298Ron/TECHIT",
         DevelopmentField: "FullStack",
         link: 'https://techit-ron.netlify.app/'
     },
@@ -98,8 +101,11 @@ function displayGallery(): void {
                         <p class="card-text">${projects[i].description}</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">${projects[i].stack}</li>
+                        <li class="list-group-item" >${projects[i].stack}
+                        <a href="${projects[i].git}" target="_blank"><i class="fa-brands fa-github text-dark fs-3 gitIcon" style="margin-left:20px;" ></i></a></li>
                         <li class="list-group-item">${projects[i].DevelopmentField}</li>
+                        <li class="list-group-item mobileGit" style="display:none;"><a href="${projects[i].git}" target="_blank"><h2>Github Link</h2></a></li>
+                        
                     </ul>
 
                 </div>

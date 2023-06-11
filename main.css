@@ -294,7 +294,7 @@ body {
     /* thirdSection */
     .thirdSection {
         width: 100vw;
-        height: 160vh;
+        height: 180vh;
         position: relative;
     }
 
@@ -306,6 +306,14 @@ body {
     .card {
         width: 50vw !important;
 
+    }
+
+    .gitIcon {
+        display: none;
+    }
+
+    .mobileGit {
+        display: block !important;
     }
 
     /* fourthSection */
